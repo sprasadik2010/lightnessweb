@@ -51,8 +51,15 @@ jQuery(document).ready(function() {
 		$('html, body').animate({
 			scrollTop: $(place).offset().top
 			}, 1200, 'easeInOutCubic');
+
+		currentli =   this.parent;
+		currentli.parent.find(".active").removeClass("active");
+		currentli.addClass(".active");
+
+
 		pde(evt);
-	});
+	});	
+
 	
 	// Nice scroll Learn More
 	$('.learn-more').click(function(evt){
