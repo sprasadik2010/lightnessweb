@@ -53,9 +53,9 @@ jQuery(document).ready(function() {
 			scrollTop: $(place).offset().top
 			}, 1200, 'easeInOutCubic');
 
-		currentli =   this.parent;
-		currentli.parent.find(".active").removeClass("active");
-		currentli.addClass(".active");
+		//currentli =   $(this).parent;
+		//currentli.parent.find(".active").removeClass("active");
+		//currentli.addClass(".active");
 
 
 		pde(evt);
